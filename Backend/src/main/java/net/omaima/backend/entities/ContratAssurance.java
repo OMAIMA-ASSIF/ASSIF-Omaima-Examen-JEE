@@ -28,6 +28,6 @@ public abstract class ContratAssurance {
     private double tauxCouverture;
     @ManyToOne
     private Client client;
-    @OneToMany(mappedBy = "ContratAssurance" , fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "contratAssurance" , fetch = FetchType.LAZY)
     private List<Paiement> paiementList;
 }
