@@ -208,7 +208,7 @@ public class ContratAssuranceServiceImpl implements ContratAssuranceService {
     }
 
     public List<PaiementDTO> getPaiementsByContrat(Long contratId) {
-        Arrays paiements = paiementRepository.findByContratAssuranceId(contratId);
+        List<Paiement> paiements = paiementRepository.findByContratAssuranceId(contratId);
         List<PaiementDTO> result = new ArrayList<>();
         for (Paiement p : paiements) {
             result.add(mapper.fromPaiement(p));
