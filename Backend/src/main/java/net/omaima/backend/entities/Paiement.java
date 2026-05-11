@@ -14,8 +14,9 @@ import java.util.Date;
 public class Paiement {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Date date;
+    private Date createdAt;
     private double montant;
+    @Enumerated(EnumType.STRING)
     private TypePaiement typePaiement;
     @ManyToOne
     private ContratAssurance contratAssurance;
