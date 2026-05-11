@@ -6,7 +6,7 @@ import net.omaima.backend.enums.ContratStatus;
 import java.util.Date;
 
 @Data
-public class AutomobileContartDTO extends ContratAssuranceDTO {
+public class AutomobileContratDTO extends ContratAssuranceDTO {
     private Long id;
     private Date createdAt;
     private ContratStatus status;

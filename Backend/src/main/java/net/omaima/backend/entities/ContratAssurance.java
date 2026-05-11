@@ -11,7 +11,7 @@ import java.util.List;
 
 
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="TYPE",length = 4)
+@DiscriminatorColumn(name="TYPE",discriminatorType = DiscriminatorType.STRING,length = 20)
 @Entity
 @Data
 @NoArgsConstructor @AllArgsConstructor
